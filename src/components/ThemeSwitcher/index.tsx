@@ -3,7 +3,11 @@ import { useEffect, useState } from 'react';
 import { Moon, Sun } from 'react-feather';
 import * as S from './styles';
 
-const ThemeSwitcher = (props: { margin?: string }) => {
+const ThemeSwitcher = (props: {
+  margin?: string;
+  absolute?: boolean;
+  inset?: string;
+}) => {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
 

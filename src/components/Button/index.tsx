@@ -1,10 +1,12 @@
 import { ButtonHTMLAttributes, forwardRef } from 'react';
 import * as S from './styles';
 
-const Button = forwardRef<
-  HTMLButtonElement,
-  ButtonHTMLAttributes<HTMLButtonElement>
->((props, ref) => {
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  variant?: string;
+  size?: number;
+}
+
+const Button = forwardRef<HTMLButtonElement, ButtonProps>((props, ref) => {
   return (
     <S.Button ref={ref} {...props}>
       {props.children}

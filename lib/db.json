@@ -1,0 +1,7 @@
+{
+  "products": [
+    { "id": 1, "title": "Produto 1", "description": "Descrição do produto 1" },
+    { "id": 2, "title": "Produto 2", "description": "Descrição do produto 2" }
+  ],
+  "categories": [{ "id": 1, "name": "Categoria 1" }]
+}
